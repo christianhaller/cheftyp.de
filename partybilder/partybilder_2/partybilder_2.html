@@ -1,0 +1,328 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>Partybilder...</title>
+		<csactions>
+			<csaction name="8870C831" class="Open Window" type="onevent" val0="gross/VerenaNessi-o.jpg" val1="" val2="415" val3="500" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="896A0E32" class="Open Window" type="onevent" val0="gross/NachtderNaechte01-o.jpg" val1="" val2="620" val3="401" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="8C0BDB35" class="Open Window" type="onevent" val0="gross/DennisFranzke-o.jpg" val1="" val2="520" val3="402" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="8D322536" class="Open Window" type="onevent" val0="gross/VerenasParty2-o.jpg" val1="" val2="411" val3="520" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="8DC90D37" class="Open Window" type="onevent" val0="gross/Lottoich2-o.jpg" val1="" val2="520" val3="357" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="8E58CD38" class="Open Window" type="onevent" val0="gross/VerenasParty3-o.jpg" val1="" val2="570" val3="337" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="8EFF7039" class="Open Window" type="onevent" val0="gross/NachtderNaechte2_01-o.jpg" val1="" val2="770" val3="493" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="8F7F7C40" class="Open Window" type="onevent" val0="gross/ImhofLotto-o.jpg" val1="" val2="670" val3="475" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="8FF3FD41" class="Open Window" type="onevent" val0="gross/AliceDeejay-o.jpg" val1="" val2="670" val3="443" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="90EDAD42" class="Open Window" type="onevent" val0="gross/KirstenVerena-o.jpg" val1="" val2="500" val3="424" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="92CACD45" class="Open Window" type="onevent" val0="gross/NachtderNaechte-o.jpg" val1="" val2="660" val3="439" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="93B3AC47" class="Open Window" type="onevent" val0="gross/Steffi96-o.jpg" val1="" val2="602" val3="511" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="95CFD651" class="Open Window" type="onevent" val0="gross/winterheimer-o.jpg" val1="" val2="670" val3="449" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="96BA9952" class="Open Window" type="onevent" val0="gross/VerenasParty1-o.jpg" val1="" val2="520" val3="364" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+		</csactions>
+		<csscriptdict>
+			<script LANGUAGE="JavaScript1.1"><!--function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+function CSOpenWindow(action) {
+	var wf = "";
+	wf = wf + "width=" + action[3];
+	wf = wf + ",height=" + action[4];
+	wf = wf + ",resizable=" + (action[5] ? "yes" : "no");
+	wf = wf + ",scrollbars=" + (action[6] ? "yes" : "no");
+	wf = wf + ",menubar=" + (action[7] ? "yes" : "no");
+	wf = wf + ",toolbar=" + (action[8] ? "yes" : "no");
+	wf = wf + ",directories=" + (action[9] ? "yes" : "no");
+	wf = wf + ",location=" + (action[10] ? "yes" : "no");
+	wf = wf + ",status=" + (action[11] ? "yes" : "no");
+	window.open(action[1],action[2],wf);
+}// --></script><script><!--function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+function CSOpenWindow(action) {
+	var wf = "";
+	wf = wf + "width=" + action[3];
+	wf = wf + ",height=" + action[4];
+	wf = wf + ",resizable=" + (action[5] ? "yes" : "no");
+	wf = wf + ",scrollbars=" + (action[6] ? "yes" : "no");
+	wf = wf + ",menubar=" + (action[7] ? "yes" : "no");
+	wf = wf + ",toolbar=" + (action[8] ? "yes" : "no");
+	wf = wf + ",directories=" + (action[9] ? "yes" : "no");
+	wf = wf + ",location=" + (action[10] ? "yes" : "no");
+	wf = wf + ",status=" + (action[11] ? "yes" : "no");
+	window.open(action[1],action[2],wf);
+}// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--CSAct[/*CMP*/ '8870C831'] = new Array(CSOpenWindow,/*URL*/ 'gross/VerenaNessi-o.jpg','',415,500,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '896A0E32'] = new Array(CSOpenWindow,/*URL*/ 'gross/NachtderNaechte01-o.jpg','',620,401,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '8C0BDB35'] = new Array(CSOpenWindow,/*URL*/ 'gross/DennisFranzke-o.jpg','',520,402,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '8D322536'] = new Array(CSOpenWindow,/*URL*/ 'gross/VerenasParty2-o.jpg','',411,520,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '8DC90D37'] = new Array(CSOpenWindow,/*URL*/ 'gross/Lottoich2-o.jpg','',520,357,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '8E58CD38'] = new Array(CSOpenWindow,/*URL*/ 'gross/VerenasParty3-o.jpg','',570,337,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '8EFF7039'] = new Array(CSOpenWindow,/*URL*/ 'gross/NachtderNaechte2_01-o.jpg','',770,493,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '8F7F7C40'] = new Array(CSOpenWindow,/*URL*/ 'gross/ImhofLotto-o.jpg','',670,475,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '8FF3FD41'] = new Array(CSOpenWindow,/*URL*/ 'gross/AliceDeejay-o.jpg','',670,443,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '90EDAD42'] = new Array(CSOpenWindow,/*URL*/ 'gross/KirstenVerena-o.jpg','',500,424,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '92CACD45'] = new Array(CSOpenWindow,/*URL*/ 'gross/NachtderNaechte-o.jpg','',660,439,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '93B3AC47'] = new Array(CSOpenWindow,/*URL*/ 'gross/Steffi96-o.jpg','',602,511,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '95CFD651'] = new Array(CSOpenWindow,/*URL*/ 'gross/winterheimer-o.jpg','',670,449,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ '96BA9952'] = new Array(CSOpenWindow,/*URL*/ 'gross/VerenasParty1-o.jpg','',520,364,false,false,false,false,false,false,false);
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body bgcolor="black" vlink="blue" link="blue" text="white">
+		<table cool width="694" height="1196" usegridx usegridy showgridx showgridy gridx="10" gridy="10" border="0" cellpadding="0" cellspacing="0">
+			<tr height="20">
+				<td width="693" height="20" colspan="27"></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="110">
+				<td width="241" height="110" colspan="11"></td>
+				<td width="300" height="110" colspan="11" align="left" xpos="241" content valign="top" csheight="63">
+					<div align="left">
+						<font color="#33ff33"><font size="7" color="#3300ff" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Partybilder II</b></font></font></div>
+				</td>
+				<td width="152" height="110" colspan="5"></td>
+				<td width="1" height="110"><spacer type="block" width="1" height="110"></td>
+			</tr>
+			<tr height="30">
+				<td width="20" height="140" rowspan="3"></td>
+				<td width="130" height="140" colspan="6" rowspan="3" valign="top" align="left" xpos="20"><a href="#" onclick="CSAction(new Array(/*CMP*/'93B3AC47'));return CSClickReturn();" csclick="93B3AC47"><img src="Steffi96-small.jpg" width="120" height="98" border="0"></a></td>
+				<td width="430" height="30" colspan="17"></td>
+				<td width="113" height="140" colspan="3" rowspan="3" valign="top" align="left" xpos="580"><a href="#" onclick="CSAction(new Array(/*CMP*/'96BA9952'));return CSClickReturn();" csclick="96BA9952"><img src="VerenasParty1-small.jpg" width="113" height="78" border="0"></a></td>
+				<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+			</tr>
+			<tr height="40">
+				<td width="100" height="110" colspan="6" rowspan="2"></td>
+				<td width="150" height="110" colspan="4" rowspan="2" valign="top" align="left" xpos="250"><a href="#" onclick="CSAction(new Array(/*CMP*/'8C0BDB35'));return CSClickReturn();" csclick="8C0BDB35"><img src="DennisFranzke-small.jpg" width="99" height="76" border="0"></a></td>
+				<td width="180" height="40" colspan="7"></td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="70">
+				<td width="20" height="70"></td>
+				<td width="121" height="250" colspan="4" rowspan="3" valign="top" align="left" xpos="420"><a href="#" onclick="CSAction(new Array(/*CMP*/'90EDAD42'));return CSClickReturn();" csclick="90EDAD42"><img src="KirstenVerena-small.jpg" width="113" height="95" border="0"></a></td>
+				<td width="39" height="70" colspan="2"></td>
+				<td width="1" height="70"><spacer type="block" width="1" height="70"></td>
+			</tr>
+			<tr height="20">
+				<td width="70" height="180" colspan="4" rowspan="2"></td>
+				<td width="130" height="180" colspan="4" rowspan="2" valign="top" align="left" xpos="70"><a href="#" onclick="CSAction(new Array(/*CMP*/'8870C831'));return CSClickReturn();" csclick="8870C831"><img src="VerenaNessi-small.jpg" border="0" width="82" height="100"></a></td>
+				<td width="220" height="20" colspan="10"></td>
+				<td width="59" height="180" colspan="4" rowspan="2"></td>
+				<td width="93" height="180" rowspan="2" valign="top" align="left" xpos="600"><a href="#" onclick="CSAction(new Array(/*CMP*/'8D322536'));return CSClickReturn();" csclick="8D322536"><img src="VerenasParty2-small.jpg" width="79" height="100" border="0"></a></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="160">
+				<td width="20" height="160"></td>
+				<td width="180" height="160" colspan="8" valign="top" align="left" xpos="220"><a href="#" onclick="CSAction(new Array(/*CMP*/'8E58CD38'));return CSClickReturn();" csclick="8E58CD38"><img src="VerenasParty3-small.jpg" width="120" height="69" border="0"></a></td>
+				<td width="20" height="160"></td>
+				<td width="1" height="160"><spacer type="block" width="1" height="160"></td>
+			</tr>
+			<tr height="150">
+				<td width="150" height="150" colspan="7"></td>
+				<td width="440" height="150" colspan="18" align="left" xpos="150" content valign="top" csheight="110">
+					<div align="center">
+						<font color="#33ff33"><font size="7" color="#3300ff" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Nacht der N&auml;chte</b></font></font>
+						<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="5" color="#fab300">Hannover</font></p>
+					</div>
+				</td>
+				<td width="103" height="150" colspan="2"></td>
+				<td width="1" height="150"><spacer type="block" width="1" height="150"></td>
+			</tr>
+			<tr height="10">
+				<td width="60" height="80" colspan="3" rowspan="4"></td>
+				<td width="140" height="80" colspan="5" rowspan="4" valign="top" align="left" xpos="60"><a href="#" target="_blank" onclick="CSAction(new Array(/*CMP*/'8FF3FD41'));return CSClickReturn();" csclick="8FF3FD41"><img src="AliceDeejay-small.jpg" border="0" height="72" width="110"></a></td>
+				<td width="493" height="10" colspan="19"></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="30">
+				<td width="200" height="30" colspan="9"></td>
+				<td width="120" height="70" colspan="4" rowspan="3" valign="top" align="left" xpos="400"><a href="#" onclick="CSAction(new Array(/*CMP*/'8EFF7039'));return CSClickReturn();" csclick="8EFF7039"><img src="NachtderNaechte2_01-small.jpg" width="110" height="69" border="0"></a></td>
+				<td width="173" height="50" colspan="6" rowspan="2"></td>
+				<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+			</tr>
+			<tr height="20">
+				<td width="40" height="140" colspan="2" rowspan="3"></td>
+				<td width="160" height="140" colspan="7" rowspan="3" valign="top" align="left" xpos="240"><a href="#" onclick="CSAction(new Array(/*CMP*/'92CACD45'));return CSClickReturn();" csclick="92CACD45"><img src="NachtderNaechte-small.jpg" width="110" height="72" border="0"></a></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="20">
+				<td width="40" height="20" colspan="2"></td>
+				<td width="133" height="120" colspan="4" rowspan="2" valign="top" align="left" xpos="560"><a href="#" onclick="CSAction(new Array(/*CMP*/'896A0E32'));return CSClickReturn();" csclick="896A0E32"><img src="NachtderNaechte01-small.jpg" width="110" height="70" border="0"></a></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="100">
+				<td width="50" height="100" colspan="2"></td>
+				<td width="150" height="100" colspan="6" align="left" xpos="50" content valign="top" csheight="45">
+					<div align="center">
+						<font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">Alice Deejay in da House...</font></div>
+				</td>
+				<td width="160" height="100" colspan="6"></td>
+				<td width="1" height="100"><spacer type="block" width="1" height="100"></td>
+			</tr>
+			<tr height="10">
+				<td width="520" height="10" colspan="21"></td>
+				<td width="173" height="100" colspan="6" rowspan="3" valign="top" align="left" xpos="520"><a href="#" target="_blank" onclick="CSAction(new Array(/*CMP*/'8F7F7C40'));return CSClickReturn();" csclick="8F7F7C40"><img src="ImhofLotto-small.jpg" width="110" height="77" border="0"></a></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="20">
+				<td width="90" height="90" colspan="5" rowspan="2"></td>
+				<td width="130" height="90" colspan="4" rowspan="2" valign="top" align="left" xpos="90"><a href="#" onclick="CSAction(new Array(/*CMP*/'95CFD651'));return CSClickReturn();" csclick="95CFD651"><img src="winterheimer-small.jpg" width="120" height="79" border="0"></a></td>
+				<td width="300" height="20" colspan="12"></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="70">
+				<td width="110" height="70" colspan="7"></td>
+				<td width="130" height="80" colspan="4" rowspan="2" valign="top" align="left" xpos="330"><a href="../../../Cheftyp_alt/Sylvester-Steffi-Magdy-Stefan-o.jpg" target="_blank" onclick="CSAction(new Array(/*CMP*/'8DC90D37'));return CSClickReturn();" csclick="8DC90D37"><img src="Lottoich2-small.jpg" width="110" height="74" border="0"></a></td>
+				<td width="60" height="70"></td>
+				<td width="1" height="70"><spacer type="block" width="1" height="70"></td>
+			</tr>
+			<tr height="10">
+				<td width="70" height="170" colspan="4" rowspan="2"></td>
+				<td width="179" height="170" colspan="8" rowspan="2" align="left" xpos="70" content valign="top" csheight="55">
+					<div align="center">
+						<font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">Hi Ralf...wie versprochen hier Euer Bild auf meiner Seite. Gru&szlig; Christian</font></div>
+				</td>
+				<td width="81" height="10" colspan="4"></td>
+				<td width="233" height="170" colspan="7" rowspan="2"></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="160">
+				<td width="51" height="160" colspan="3"></td>
+				<td width="160" height="160" colspan="5" align="left" xpos="300" content valign="top" csheight="25">
+					<div align="center">
+						<font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">Na wer ist denn das...</font></div>
+				</td>
+				<td width="1" height="160"><spacer type="block" width="1" height="160"></td>
+			</tr>
+			<tr height="55">
+				<td width="150" height="55" colspan="7"></td>
+				<td width="100" height="55" colspan="6" valign="top" align="left" xpos="150"><a href="../partybilder_1/partybilder_1.html"><img src="../fire_left.jpg" width="100" height="50" border="0"></a></td>
+				<td width="443" height="55" colspan="14"></td>
+				<td width="1" height="55"><spacer type="block" width="1" height="55"></td>
+			</tr>
+			<tr height="55">
+				<td width="121" height="55" colspan="6"></td>
+				<td width="160" height="55" colspan="8" align="left" xpos="121" content valign="top" csheight="32">
+					<div align="center">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#fab300"><b>Partybilder I</b></font></div>
+				</td>
+				<td width="412" height="55" colspan="13"></td>
+				<td width="1" height="55"><spacer type="block" width="1" height="55"></td>
+			</tr>
+			<tr height="35">
+				<td width="330" height="35" colspan="16"></td>
+				<td width="108" height="35" colspan="3" align="left" xpos="330" content valign="top" csheight="35">
+					<div align="center">
+						<font color="white"><a href="../partybilder_1/partybilder_1.html" target="partybilder_main">-1-</a> -2- </font></div>
+				</td>
+				<td width="255" height="35" colspan="8"></td>
+				<td width="1" height="35"><spacer type="block" width="1" height="35"></td>
+			</tr>
+			<tr height="1" cntrlrow>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="30" height="1"><spacer type="block" width="30" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="31" height="1"><spacer type="block" width="31" height="1"></td>
+				<td width="29" height="1"><spacer type="block" width="29" height="1"></td>
+				<td width="50" height="1"><spacer type="block" width="50" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+				<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+				<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+				<td width="31" height="1"><spacer type="block" width="31" height="1"></td>
+				<td width="19" height="1"><spacer type="block" width="19" height="1"></td>
+				<td width="30" height="1"><spacer type="block" width="30" height="1"></td>
+				<td width="70" height="1"><spacer type="block" width="70" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="18" height="1"><spacer type="block" width="18" height="1"></td>
+				<td width="22" height="1"><spacer type="block" width="22" height="1"></td>
+				<td width="60" height="1"><spacer type="block" width="60" height="1"></td>
+				<td width="21" height="1"><spacer type="block" width="21" height="1"></td>
+				<td width="19" height="1"><spacer type="block" width="19" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="93" height="1"><spacer type="block" width="93" height="1"></td>
+				<td width="1" height="1"></td>
+			</tr>
+		</table>
+		<p></p>
+	</body>
+
+</html>

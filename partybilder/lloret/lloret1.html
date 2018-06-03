@@ -1,0 +1,461 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>Lloret 2001...</title>
+		<csactions>
+			<csaction name="12221B5116" class="Open Window" type="onevent" val0="tanga_voting.html" val1="" val2="0" val3="0" val4="true" val5="true" val6="false" val7="false" val8="false" val9="false" val10="false">
+		</csactions>
+		<csscriptdict>
+			<script><!--
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+
+CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+function CSOpenWindow(action) {
+	var wf = "";
+	wf = wf + "width=" + action[3];
+	wf = wf + ",height=" + action[4];
+	wf = wf + ",resizable=" + (action[5] ? "yes" : "no");
+	wf = wf + ",scrollbars=" + (action[6] ? "yes" : "no");
+	wf = wf + ",menubar=" + (action[7] ? "yes" : "no");
+	wf = wf + ",toolbar=" + (action[8] ? "yes" : "no");
+	wf = wf + ",directories=" + (action[9] ? "yes" : "no");
+	wf = wf + ",location=" + (action[10] ? "yes" : "no");
+	wf = wf + ",status=" + (action[11] ? "yes" : "no");
+	window.open(action[1],action[2],wf);
+}
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSAct[/*CMP*/ '12221B5116'] = new Array(CSOpenWindow,/*URL*/ 'tanga_voting.html','',0,0,true,true,false,false,false,false,false);
+
+// --></script>
+		</csactiondict>
+	</head>
+
+<script LANGUAGE="JavaScript1.1">
+
+function right(e) {
+if (navigator.appName == 'Netscape' && 
+(e.which == 3 || e.which == 2))
+return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && 
+(event.button == 2 || event.button == 3)) {
+alert("neee...das könnte die wohl so passen !");
+
+return false;
+}
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+
+</script>
+
+	<body bgcolor="black">
+		<table cool width="771" height="1903" usegridx usegridy showgridx showgridy gridx="10" gridy="10" border="0" cellpadding="0" cellspacing="0">
+			<tr height="56">
+				<td width="180" height="64" colspan="9" rowspan="2"></td>
+				<td width="40" height="200" colspan="4" rowspan="3"></td>
+				<td width="270" height="200" colspan="15" rowspan="3" valign="top" align="left" xpos="220"><img src="bilder/lloret_banner.jpg" width="250" height="131" border="0"></td>
+				<td width="30" height="200" colspan="2" rowspan="3"></td>
+				<td width="185" height="56" colspan="10"></td>
+				<td width="55" height="690" rowspan="13"></td>
+				<td width="10" height="965" rowspan="20"></td>
+				<td width="1" height="56"><spacer type="block" width="1" height="56"></td>
+			</tr>
+			<tr height="8">
+				<td width="185" height="144" colspan="10" rowspan="2" valign="top" align="left" xpos="520"><a href="http://www.Sanmiguel.es" target="_blank"><img src="bilder/SanMiguel.jpg" width="170" height="119" border="0"></a></td>
+				<td width="1" height="8"><spacer type="block" width="1" height="8"></td>
+			</tr>
+			<tr height="136">
+				<td width="180" height="136" colspan="9" valign="top" align="left" xpos="0"><a href="http://www.Dr-Doener.com" target="_blank"><img src="bilder/DrDoener.jpg" width="171" height="93" border="0"></a></td>
+				<td width="1" height="136"><spacer type="block" width="1" height="136"></td>
+			</tr>
+			<tr height="90">
+				<td width="10" height="1702" rowspan="41"></td>
+				<td width="30" height="90" colspan="3"></td>
+				<td width="665" height="90" colspan="36" align="left" xpos="40" content valign="top" csheight="30">
+					<div align="left">
+						<font color="red" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="4"><b>Die Empelder Fu&szlig;ballhorde startet ihr Trainingslager in Lloret de Mar...</b></font></div>
+				</td>
+				<td width="1" height="90"><spacer type="block" width="1" height="90"></td>
+			</tr>
+			<tr height="90">
+				<td width="150" height="90" colspan="6" valign="top" align="left" xpos="10"><a href="bilder/gross/lloret_1/Schleife1.jpg" target="_blank"><img src="bilder/lloret_1/Schleife1-small.jpg" width="140" height="87" border="0"></a></td>
+				<td width="120" height="120" colspan="8" rowspan="3"></td>
+				<td width="153" height="90" colspan="10" valign="top" align="left" xpos="280"><a href="bilder/gross/lloret_1/Gruppe.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe-small.jpg" width="140" height="74" border="0"></a></td>
+				<td width="7" height="250" rowspan="5"></td>
+				<td width="97" height="100" colspan="5" rowspan="2"></td>
+				<td width="13" height="250" colspan="2" rowspan="5"></td>
+				<td width="155" height="90" colspan="7" valign="top" align="left" xpos="550"><a href="bilder/gross/lloret_1/ZOB1.jpg" target="_blank"><img src="bilder/lloret_1/ZOB1-small.jpg" width="140" height="90" border="0"></a></td>
+				<td width="1" height="90"><spacer type="block" width="1" height="90"></td>
+			</tr>
+			<tr height="10">
+				<td width="25" height="110" colspan="2" rowspan="3"></td>
+				<td width="105" height="30" colspan="2" rowspan="2" align="left" xpos="35" content valign="top" csheight="25">
+					<div align="left">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#ff00ff" size="2"><b>Der Anfang ...</b></font></div>
+				</td>
+				<td width="20" height="480" colspan="2" rowspan="14"></td>
+				<td width="25" height="30" colspan="2" rowspan="2"></td>
+				<td width="30" height="200" colspan="2" rowspan="5"></td>
+				<td width="15" height="340" colspan="2" rowspan="9"></td>
+				<td width="20" height="380" colspan="2" rowspan="10"></td>
+				<td width="63" height="160" colspan="2" rowspan="4"></td>
+				<td width="55" height="160" colspan="3" rowspan="4"></td>
+				<td width="100" height="200" colspan="4" rowspan="5"></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="20">
+				<td width="97" height="150" colspan="5" rowspan="3" valign="top" align="left" xpos="440"><a href="bilder/gross/lloret_1/Tino1.jpg" target="_blank"><img src="bilder/lloret_1/Tino1-small.jpg" width="96" height="140" border="0"></a></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="80">
+				<td width="105" height="80" colspan="2"></td>
+				<td width="145" height="130" colspan="10" rowspan="2" valign="top" align="left" xpos="160"><a href="bilder/gross/lloret_1/Bahnhof1.jpg" target="_blank"><img src="bilder/lloret_1/Bahnhof1-small.jpg" width="140" height="94" border="0"></a></td>
+				<td width="1" height="80"><spacer type="block" width="1" height="80"></td>
+			</tr>
+			<tr height="50">
+				<td width="130" height="180" colspan="4" rowspan="4" valign="top" align="left" xpos="10"><a href="bilder/gross/lloret_1/Tino2.jpg" target="_blank"><img src="bilder/lloret_1/Tino2-small.jpg" width="95" height="140" border="0"></a></td>
+				<td width="1" height="50"><spacer type="block" width="1" height="50"></td>
+			</tr>
+			<tr height="40">
+				<td width="10" height="1362" rowspan="35"></td>
+				<td width="10" height="180" rowspan="5"></td>
+				<td width="125" height="40" colspan="8"></td>
+				<td width="235" height="40" colspan="13" align="left" xpos="370" content valign="top" csheight="23">
+					<div align="left">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#ccff33" size="2"><b>Was macht den Witwe Bolte hier...</b></font></div>
+				</td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="30">
+				<td width="155" height="140" colspan="10" rowspan="4" valign="top" align="left" xpos="180"><a href="bilder/gross/lloret_1/Wenzel2.jpg" target="_blank"><img src="bilder/lloret_1/Wenzel2-small.jpg" width="140" height="130" border="0"></a></td>
+				<td width="10" height="180" rowspan="5"></td>
+				<td width="110" height="30" colspan="4"></td>
+				<td width="55" height="180" colspan="4" rowspan="5"></td>
+				<td width="5" height="430" rowspan="14"></td>
+				<td width="155" height="90" colspan="7" rowspan="2" valign="top" align="left" xpos="550"><a href="bilder/gross/lloret_1/Gruppe3.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe3-small.jpg" width="140" height="88" border="0"></a></td>
+				<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+			</tr>
+			<tr height="60">
+				<td width="110" height="150" colspan="4" rowspan="4" valign="top" align="left" xpos="380"><a href="bilder/gross/lloret_1/Gruppe2.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe2-small.jpg" width="97" height="140" border="0"></a></td>
+				<td width="1" height="60"><spacer type="block" width="1" height="60"></td>
+			</tr>
+			<tr height="20">
+				<td width="10" height="1232" rowspan="32"></td>
+				<td width="20" height="190" colspan="2" rowspan="7"></td>
+				<td width="100" height="150" rowspan="5" valign="top" align="left" xpos="40"><a href="bilder/gross/lloret_1/Wenzel1.jpg" target="_blank"><img src="bilder/lloret_1/Wenzel1-small.jpg" width="66" height="150" border="0"></a></td>
+				<td width="30" height="340" rowspan="12"></td>
+				<td width="20" height="295" rowspan="8"></td>
+				<td width="105" height="20" colspan="5"></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="30">
+				<td width="160" height="110" colspan="6" rowspan="3" valign="top" align="left" xpos="600"><a href="bilder/gross/lloret_1/Gruppe4.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe4-small.jpg" width="140" height="100" border="0"></a></td>
+				<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+			</tr>
+			<tr height="40">
+				<td width="180" height="40" colspan="13" align="left" xpos="170" content valign="top" csheight="23">
+					<div align="left">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#006600" size="2"><b>Uns Wenzel gibt Vollgas !</b></font></div>
+				</td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="40">
+				<td width="10" height="600" rowspan="21"></td>
+				<td width="20" height="220" rowspan="7"></td>
+				<td width="105" height="40" colspan="7"></td>
+				<td width="35" height="365" colspan="3" rowspan="11"></td>
+				<td width="205" height="40" colspan="12" align="left" xpos="340" content valign="top" csheight="23">
+					<div align="left">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#0033ff" size="2"><b>So ne Bussfahrt die ist lustig...</b></font></div>
+				</td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="20">
+				<td width="105" height="165" colspan="7" rowspan="4" valign="top" align="left" xpos="200"><a href="bilder/gross/lloret_1/Christoph1.jpg" target="_blank"><img src="bilder/lloret_1/Christoph1-small.jpg" width="101" height="140" border="0"></a></td>
+				<td width="20" height="170" colspan="2" rowspan="5"></td>
+				<td width="150" height="20" colspan="7"></td>
+				<td width="35" height="210" colspan="3" rowspan="8"></td>
+				<td width="160" height="30" colspan="6" rowspan="2"></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="10">
+				<td width="100" height="40" rowspan="2"></td>
+				<td width="150" height="145" colspan="7" rowspan="3" valign="top" align="left" xpos="360"><a href="bilder/gross/lloret_1/Wenzel3.jpg" target="_blank"><img src="bilder/lloret_1/Wenzel3-small.jpg" width="140" height="106" border="0"></a></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="30">
+				<td width="160" height="135" colspan="6" rowspan="2" valign="top" align="left" xpos="600"><a href="bilder/gross/lloret_1/Xander1.jpg" target="_blank"><img src="bilder/lloret_1/Xander1-small.jpg" width="140" height="128" border="0"></a></td>
+				<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+			</tr>
+			<tr height="105">
+				<td width="140" height="140" colspan="5" rowspan="4" valign="top" align="left" xpos="20"><a href="bilder/gross/lloret_1/Tino3.jpg" target="_blank"><img src="bilder/lloret_1/Tino3-small.jpg" width="130" height="127" border="0"></a></td>
+				<td width="1" height="105"><spacer type="block" width="1" height="105"></td>
+			</tr>
+			<tr height="5">
+				<td width="80" height="15" colspan="5" rowspan="2"></td>
+				<td width="10" height="225" rowspan="9"></td>
+				<td width="15" height="160" rowspan="6"></td>
+				<td width="73" height="5" colspan="3"></td>
+				<td width="57" height="160" colspan="3" rowspan="6"></td>
+				<td width="20" height="445" rowspan="17"></td>
+				<td width="190" height="35" colspan="8" rowspan="3" align="left" xpos="580" content valign="top" csheight="23">
+					<div align="left">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="red" size="2"><b>Gestatten...Rumpelstilzchen </b></font></div>
+				</td>
+				<td width="1" height="5"><spacer type="block" width="1" height="5"></td>
+			</tr>
+			<tr height="10">
+				<td width="93" height="155" colspan="5" rowspan="5" valign="top" align="left" xpos="340"><a href="bilder/gross/lloret_1/Wenzel4.jpg" target="_blank"><img src="bilder/lloret_1/Wenzel4-small.jpg" width="80" height="145" border="0"></a></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="20">
+				<td width="100" height="145" colspan="6" rowspan="4" valign="top" align="left" xpos="180"><a href="bilder/gross/lloret_1/BastiKanzler.jpg" target="_blank"><img src="bilder/lloret_1/BastiKanzler-small.jpg" width="97" height="140" border="0"></a></td>
+				<td width="1" height="20"><spacer type="block" width="1" height="20"></td>
+			</tr>
+			<tr height="10">
+				<td width="20" height="140" colspan="2" rowspan="4"></td>
+				<td width="105" height="50" colspan="2" rowspan="2" align="left" xpos="40" content valign="top" csheight="25">
+					<div align="left">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#9966ff" size="2"><b>Ohne Worte...</b></font></div>
+				</td>
+				<td width="15" height="140" rowspan="4"></td>
+				<td width="90" height="10" colspan="4"></td>
+				<td width="10" height="230" rowspan="8"></td>
+				<td width="80" height="50" colspan="2" rowspan="2"></td>
+				<td width="10" height="902" rowspan="21"></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="40">
+				<td width="160" height="130" colspan="9" rowspan="3" valign="top" align="left" xpos="510"><a href="bilder/gross/lloret_1/Gruppe6.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe6-small.jpg" width="130" height="124" border="0"></a></td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="75">
+				<td width="105" height="90" colspan="2" rowspan="2"></td>
+				<td width="80" height="130" colspan="2" rowspan="3" valign="top" align="left" xpos="680"><a href="bilder/gross/lloret_1/Basti9.jpg" target="_blank"><img src="bilder/lloret_1/Basti9-small.jpg" width="72" height="130" border="0"></a></td>
+				<td width="1" height="75"><spacer type="block" width="1" height="75"></td>
+			</tr>
+			<tr height="15">
+				<td width="30" height="235" colspan="2" rowspan="10"></td>
+				<td width="70" height="65" colspan="4" rowspan="3"></td>
+				<td width="200" height="55" colspan="12" rowspan="2" align="left" xpos="290" content valign="top" csheight="40">
+					<div align="center">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#33ccff" size="2"><b>Zeig uns Deinen Popo, der<br>
+								
+								w&uuml;rde uns interessieren!!!</b></font></div>
+				</td>
+				<td width="1" height="15"><spacer type="block" width="1" height="15"></td>
+			</tr>
+			<tr height="40">
+				<td width="140" height="120" colspan="5" rowspan="5" valign="top" align="left" xpos="20"><a href="bilder/gross/lloret_1/KanzlerBasti1.jpg" target="_blank"><img src="bilder/lloret_1/KanzlerBasti1-small.jpg" width="140" height="92" border="0"></a></td>
+				<td width="10" height="270" rowspan="10"></td>
+				<td width="150" height="40" colspan="8"></td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="10">
+				<td width="45" height="10" colspan="3"></td>
+				<td width="25" height="170" colspan="3" rowspan="7"></td>
+				<td width="130" height="40" colspan="6" rowspan="2"></td>
+				<td width="150" height="120" colspan="8" rowspan="5" valign="top" align="left" xpos="520"><a href="bilder/gross/lloret_1/Wenzel7.jpg" target="_blank"><img src="bilder/lloret_1/Wenzel7-small.jpg" width="125" height="82" border="0"></a></td>
+				<td width="80" height="50" colspan="2" rowspan="3"></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="30">
+				<td width="125" height="110" colspan="8" rowspan="4" valign="top" align="left" xpos="210"><a href="bilder/gross/lloret_1/Hola.jpg" target="_blank"><img src="bilder/lloret_1/Hola-small.jpg" width="120" height="99" border="0"></a></td>
+				<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+			</tr>
+			<tr height="10">
+				<td width="130" height="90" colspan="6" rowspan="4" valign="top" align="left" xpos="360"><a href="bilder/gross/lloret_1/ChristianWenzel.jpg" target="_blank"><img src="bilder/lloret_1/ChristianWenzel-small.jpg" width="120" height="85" border="0"></a></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="30">
+				<td width="90" height="120" colspan="3" rowspan="4" valign="top" align="left" xpos="670"><a href="bilder/gross/lloret_1/Zieeeeh.jpg" target="_blank"><img src="bilder/lloret_1/Zieeeeh-small.jpg" width="85" height="120" border="0"></a></td>
+				<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+			</tr>
+			<tr height="40">
+				<td width="120" height="100" colspan="3" rowspan="4" valign="top" align="left" xpos="20"><a href="bilder/gross/lloret_1/Gruppe10.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe10-small.jpg" width="99" height="100" border="0"></a></td>
+				<td width="20" height="642" colspan="2" rowspan="12"></td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="10">
+				<td width="30" height="60" colspan="3" rowspan="3"></td>
+				<td width="65" height="50" colspan="3" rowspan="2" align="left" xpos="240" content valign="top" csheight="25">
+					<div align="left">
+						<font color="#ff00cc" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>HOLA !!!</b></font></div>
+				</td>
+				<td width="30" height="50" colspan="2" rowspan="2"></td>
+				<td width="150" height="10" colspan="8"></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="40">
+				<td width="73" height="40" colspan="3"></td>
+				<td width="7" height="545" rowspan="9"></td>
+				<td width="50" height="100" colspan="2" rowspan="3"></td>
+				<td width="150" height="100" colspan="8" rowspan="3" valign="top" align="left" xpos="520"><a href="bilder/gross/lloret_1/Gruppe7.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe7-small.jpg" width="120" height="79" border="0"></a></td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="10">
+				<td width="40" height="10"></td>
+				<td width="10" height="480" rowspan="7"></td>
+				<td width="143" height="270" colspan="9" rowspan="4" valign="top" align="left" xpos="290"><a href="bilder/gross/lloret_1/Gruppe8.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe8-small.jpg" width="120" height="91" border="0"></a></td>
+				<td width="10" height="552" rowspan="9"></td>
+				<td width="80" height="10" colspan="2"></td>
+				<td width="1" height="10"><spacer type="block" width="1" height="10"></td>
+			</tr>
+			<tr height="50">
+				<td width="120" height="80" colspan="3" rowspan="2"></td>
+				<td width="110" height="260" colspan="7" rowspan="3" valign="top" align="left" xpos="170"><a href="bilder/gross/lloret_1/Christian2.jpg" target="_blank"><img src="bilder/lloret_1/Christian2-small.jpg" width="74" height="120" border="0"></a></td>
+				<td width="80" height="50" colspan="2" align="left" xpos="680" content valign="top" csheight="23">
+					<div align="left">
+						<font color="#99ff00" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>Zieeeeeh...</b></font></div>
+				</td>
+				<td width="1" height="50"><spacer type="block" width="1" height="50"></td>
+			</tr>
+			<tr height="30">
+				<td width="97" height="210" colspan="5" rowspan="2" valign="top" align="left" xpos="440"><a href="bilder/gross/lloret_1/BastiKanzler2.jpg" target="_blank"><img src="bilder/lloret_1/BastiKanzler2-small.jpg" width="89" height="120" border="0"></a></td>
+				<td width="63" height="210" colspan="4" rowspan="2"></td>
+				<td width="25" height="270" colspan="2" rowspan="3"></td>
+				<td width="45" height="492" rowspan="7"></td>
+				<td width="80" height="492" colspan="2" rowspan="7"></td>
+				<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+			</tr>
+			<tr height="180">
+				<td width="120" height="180" colspan="3" valign="top" align="left" xpos="20"><a href="bilder/gross/lloret_1/Gruppe9.jpg" target="_blank"><img src="bilder/lloret_1/Gruppe9-small.jpg" width="120" height="80" border="0"></a></td>
+				<td width="1" height="180"><spacer type="block" width="1" height="180"></td>
+			</tr>
+			<tr height="60">
+				<td width="120" height="282" colspan="3" rowspan="5"></td>
+				<td width="45" height="282" colspan="4" rowspan="5"></td>
+				<td width="65" height="210" colspan="3" rowspan="3"></td>
+				<td width="29" height="210" colspan="2" rowspan="3"></td>
+				<td width="114" height="140" colspan="7" rowspan="2"></td>
+				<td width="20" height="235" rowspan="4"></td>
+				<td width="30" height="60"></td>
+				<td width="110" height="60" colspan="7" valign="top" align="left" xpos="490"><a href="lloret2.html" target="partybilder_main"><img src="bilder/Fire-Right.jpg" width="100" height="50" border="0"></a></td>
+				<td width="1" height="60"><spacer type="block" width="1" height="60"></td>
+			</tr>
+			<tr height="80">
+				<td width="165" height="80" colspan="10" align="left" xpos="460" content valign="top" csheight="30">
+					<div align="center">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#66ff33"><b>Cheftypen im Fame</b></font></div>
+				</td>
+				<td width="1" height="80"><spacer type="block" width="1" height="80"></td>
+			</tr>
+			<tr height="70">
+				<td width="114" height="70" colspan="7" align="left" xpos="319" content valign="top" csheight="45">
+					<div align="center">
+						<font color="white">-1- <a href="lloret2.html" target="partybilder_main">-2-</a> <a href="lloret3.html" target="partybilder_main">-3-</a> <a href="lloret4.html" target="partybilder_main">-4-</a></font></div>
+				</td>
+				<td width="77" height="95" colspan="4" rowspan="2"></td>
+				<td width="88" height="142" colspan="6" rowspan="3"></td>
+				<td width="1" height="70"><spacer type="block" width="1" height="70"></td>
+			</tr>
+			<tr height="25">
+				<td width="120" height="72" colspan="7" rowspan="2" valign="top" align="left" xpos="215"><a href="#" onclick="CSAction(new Array(/*CMP*/'12221B5116'));return CSClickReturn();" csclick="12221B5116"><img src="bilder/tanga_logo.jpg" width="110" height="72" border="0"></a></td>
+				<td width="98" height="25" colspan="6"></td>
+				<td width="1" height="25"><spacer type="block" width="1" height="25"></td>
+			</tr>
+			<tr height="47">
+				<td width="202" height="47" colspan="12" align="left" xpos="335" content valign="top" csheight="40">
+					<div align="left">
+						<font color="#66ff33" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><b>Total lockeres Tanga Voting<br>
+								
+								&lt;&lt;&lt;&lt;&lt; Klick hier</b></font></div>
+				</td>
+				<td width="1" height="47"><spacer type="block" width="1" height="47"></td>
+			</tr>
+			<tr height="1" cntrlrow>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="15" height="1"><spacer type="block" width="15" height="1"></td>
+				<td width="5" height="1"><spacer type="block" width="5" height="1"></td>
+				<td width="100" height="1"><spacer type="block" width="100" height="1"></td>
+				<td width="5" height="1"><spacer type="block" width="5" height="1"></td>
+				<td width="15" height="1"><spacer type="block" width="15" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="5" height="1"><spacer type="block" width="5" height="1"></td>
+				<td width="5" height="1"><spacer type="block" width="5" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="40" height="1"><spacer type="block" width="40" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="15" height="1"><spacer type="block" width="15" height="1"></td>
+				<td width="14" height="1"><spacer type="block" width="14" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="5" height="1"><spacer type="block" width="5" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="53" height="1"><spacer type="block" width="53" height="1"></td>
+				<td width="7" height="1"><spacer type="block" width="7" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="30" height="1"><spacer type="block" width="30" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="17" height="1"><spacer type="block" width="17" height="1"></td>
+				<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+				<td width="5" height="1"><spacer type="block" width="5" height="1"></td>
+				<td width="30" height="1"><spacer type="block" width="30" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="5" height="1"><spacer type="block" width="5" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="45" height="1"><spacer type="block" width="45" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="25" height="1"><spacer type="block" width="25" height="1"></td>
+				<td width="55" height="1"><spacer type="block" width="55" height="1"></td>
+				<td width="10" height="1"><spacer type="block" width="10" height="1"></td>
+				<td width="1" height="1"></td>
+			</tr>
+		</table>
+		<p></p>
+	</body>
+
+</html>

@@ -1,0 +1,450 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>Tanga-Voting...</title>
+		<csactions>
+			<csaction name="D562F091" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga9.jpg" val1="" val2="457" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="D6753092" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga8.jpg" val1="" val2="537" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="D72EE893" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga7b.jpg" val1="" val2="535" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="D7B41F94" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga7a.jpg" val1="" val2="600" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="D836B595" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga6.jpg" val1="" val2="500" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="D8BD4396" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga5.jpg" val1="" val2="468" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="D966D397" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga4.jpg" val1="" val2="468" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="DA186098" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga3.jpg" val1="" val2="453" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="DACD2399" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga2b.jpg" val1="" val2="412" val3="840" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="DB7FF3100" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga2a.jpg" val1="" val2="517" val3="940" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="DBF4B0101" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga1b.jpg" val1="" val2="573" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="DC67BD102" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga1a.jpg" val1="" val2="507" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="DCF28B103" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga12.jpg" val1="" val2="420" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="DD5B6B104" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga11.jpg" val1="" val2="407" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+			<csaction name="DE0869105" class="Open Window" type="onevent" val0="bilder/gross/tanga_voting/Tanga10.jpg" val1="" val2="515" val3="920" val4="false" val5="false" val6="false" val7="false" val8="false" val9="false" val10="false">
+		</csactions>
+		<csscriptdict>
+			<script><!--function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+function CSOpenWindow(action) {
+	var wf = "";
+	wf = wf + "width=" + action[3];
+	wf = wf + ",height=" + action[4];
+	wf = wf + ",resizable=" + (action[5] ? "yes" : "no");
+	wf = wf + ",scrollbars=" + (action[6] ? "yes" : "no");
+	wf = wf + ",menubar=" + (action[7] ? "yes" : "no");
+	wf = wf + ",toolbar=" + (action[8] ? "yes" : "no");
+	wf = wf + ",directories=" + (action[9] ? "yes" : "no");
+	wf = wf + ",location=" + (action[10] ? "yes" : "no");
+	wf = wf + ",status=" + (action[11] ? "yes" : "no");
+	window.open(action[1],action[2],wf);
+}// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--CSAct[/*CMP*/ 'D562F091'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga9.jpg','',457,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'D6753092'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga8.jpg','',537,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'D72EE893'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga7b.jpg','',535,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'D7B41F94'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga7a.jpg','',600,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'D836B595'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga6.jpg','',500,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'D8BD4396'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga5.jpg','',468,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'D966D397'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga4.jpg','',468,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'DA186098'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga3.jpg','',453,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'DACD2399'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga2b.jpg','',412,840,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'DB7FF3100'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga2a.jpg','',517,940,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'DBF4B0101'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga1b.jpg','',573,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'DC67BD102'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga1a.jpg','',507,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'DCF28B103'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga12.jpg','',420,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'DD5B6B104'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga11.jpg','',407,920,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'DE0869105'] = new Array(CSOpenWindow,/*URL*/ 'bilder/gross/tanga_voting/Tanga10.jpg','',515,920,false,false,false,false,false,false,false);
+// --></script>
+		</csactiondict>
+	</head>
+
+<script LANGUAGE="JavaScript1.1">
+
+function right(e) {
+if (navigator.appName == 'Netscape' && 
+(e.which == 3 || e.which == 2))
+return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && 
+(event.button == 2 || event.button == 3)) {
+alert("neee...das könnte die wohl so passen !");
+
+return false;
+}
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+
+</script>
+
+	<body bgcolor="black">
+		<table cool width="691" height="1184" usegridx usegridy showgridx showgridy gridx="8" gridy="8" border="0" cellpadding="0" cellspacing="0">
+			<tr height="56">
+				<td width="220" height="64" colspan="15" rowspan="2"></td>
+				<td width="261" height="200" colspan="11" rowspan="3" valign="top" align="left" xpos="220"><img src="lloret_banner.jpg" width="250" height="131" border="0"></td>
+				<td width="209" height="56" colspan="13"></td>
+				<td width="1" height="56"><spacer type="block" width="1" height="56"></td>
+			</tr>
+			<tr height="8">
+				<td width="39" height="144" colspan="2" rowspan="2"></td>
+				<td width="170" height="144" colspan="11" rowspan="2" valign="top" align="left" xpos="520"><a href="http://www.Sanmiguel.es" target="_blank"><img src="bilder/SanMiguel.jpg" width="170" height="119" border="0"></a></td>
+				<td width="1" height="8"><spacer type="block" width="1" height="8"></td>
+			</tr>
+			<tr height="136">
+				<td width="176" height="136" colspan="12" valign="top" align="left" xpos="0"><a href="http://www.Dr-Doener.com" target="_blank"><img src="bilder/DrDoener.jpg" width="171" height="93" border="0"></a></td>
+				<td width="44" height="136" colspan="3"></td>
+				<td width="1" height="136"><spacer type="block" width="1" height="136"></td>
+			</tr>
+			<tr height="64">
+				<td width="168" height="64" colspan="11"></td>
+				<td width="368" height="64" colspan="18" align="left" xpos="168" content valign="top" csheight="36">
+					<div align="left">
+						<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#ffb300" size="5"><b>- Total lockeres Tanga Voting -</b></font></div>
+				</td>
+				<td width="154" height="64" colspan="10"></td>
+				<td width="1" height="64"><spacer type="block" width="1" height="64"></td>
+			</tr>
+			<tr height="6">
+				<td width="20" height="180" colspan="2" rowspan="2"></td>
+				<td width="98" height="180" colspan="6" rowspan="2" valign="top" align="left" xpos="20"><a href="#" onclick="CSAction(new Array(/*CMP*/'DC67BD102'));return CSClickReturn();" csclick="DC67BD102"><img src="bilder/tanga_voting/Tanga1a-small.jpg" width="92" height="170" border="0"></a></td>
+				<td width="2" height="180" rowspan="2"></td>
+				<td width="116" height="180" colspan="7" rowspan="2" valign="top" align="left" xpos="120"><a href="#" onclick="CSAction(new Array(/*CMP*/'DBF4B0101'));return CSClickReturn();" csclick="DBF4B0101"><img src="bilder/tanga_voting/Tanga1b-small.jpg" width="105" height="170" border="0"></a></td>
+				<td width="269" height="6" colspan="11"></td>
+				<td width="95" height="180" colspan="7" rowspan="2" valign="top" align="left" xpos="505"><a href="#" onclick="CSAction(new Array(/*CMP*/'DB7FF3100'));return CSClickReturn();" csclick="DB7FF3100"><img src="bilder/tanga_voting/Tanga2a-small.jpg" width="92" height="170" border="0"></a></td>
+				<td width="90" height="180" colspan="5" rowspan="2" valign="top" align="left" xpos="600"><a href="#" onclick="CSAction(new Array(/*CMP*/'DACD2399'));return CSClickReturn();" csclick="DACD2399"><img src="bilder/tanga_voting/Tanga2b-small.jpg" width="82" height="170" border="0"></a></td>
+				<td width="1" height="6"><spacer type="block" width="1" height="6"></td>
+			</tr>
+			<tr height="174">
+				<td width="28" height="174"></td>
+				<td width="112" height="174" colspan="5" valign="top" align="left" xpos="264"><a href="#" onclick="CSAction(new Array(/*CMP*/'D7B41F94'));return CSClickReturn();" csclick="D7B41F94"><img src="bilder/tanga_voting/Tanga7a-small.jpg" width="107" height="165" border="0"></a></td>
+				<td width="105" height="174" colspan="4" valign="top" align="left" xpos="376"><a href="#" onclick="CSAction(new Array(/*CMP*/'D72EE893'));return CSClickReturn();" csclick="D72EE893"><img src="bilder/tanga_voting/Tanga7b-small.jpg" width="94" height="165" border="0"></a></td>
+				<td width="24" height="174"></td>
+				<td width="1" height="174"><spacer type="block" width="1" height="174"></td>
+			</tr>
+			<tr height="2">
+				<td width="90" height="42" colspan="7" rowspan="2"></td>
+				<td width="32" height="42" colspan="3" rowspan="2" align="left" xpos="90" content valign="top" csheight="32">
+					<div align="center">
+						<font color="#14cc28" size="4"><b>1.</b></font></div>
+				</td>
+				<td width="463" height="2" colspan="22"></td>
+				<td width="32" height="42" colspan="4" rowspan="2" align="left" xpos="585" content valign="top" csheight="32">
+					<div align="center">
+						<font color="#14cc28" size="4"><b>3.</b></font></div>
+				</td>
+				<td width="73" height="42" colspan="3" rowspan="2"></td>
+				<td width="1" height="2"><spacer type="block" width="1" height="2"></td>
+			</tr>
+			<tr height="40">
+				<td width="238" height="40" colspan="10"></td>
+				<td width="32" height="40" colspan="3" align="left" xpos="360" content valign="top" csheight="29">
+					<div align="center">
+						<font color="#14cc28" size="4"><b>2.</b></font></div>
+				</td>
+				<td width="193" height="40" colspan="9"></td>
+				<td width="1" height="40"><spacer type="block" width="1" height="40"></td>
+			</tr>
+			<tr height="8">
+				<td width="176" height="16" colspan="12" rowspan="2"></td>
+				<td width="344" height="490" colspan="16" rowspan="8" valign="top" align="left" xpos="176">
+					<FORM METHOD="POST" ACTION="http://www.webmart.de/votes/votes.cfm?do=vote&uid=28711" target="_blank">
+						<TABLE CELLPADDING=3 CELLSPACING=0 BORDER=0 WIDTH=340>
+							<TR>
+								<TD COLSPAN=2 BGCOLOR="#3366CC">
+									<div align="center">
+										<font color="#EEEEEE" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="4"><b>Total lockeres Tanga Voting</b></font></div>
+								</TD>
+							</TR>
+							<TR>
+								<TD COLSPAN=2 BGCOLOR="#00AAAA">
+									<div align="center">
+										<font size="2"><br>
+										</font><font face="Verdana,Arial,Geneva" color="#000000" size="2">Jetzt gehte los ... Und bitte jeder nur einmal ... au&szlig;er ihr kennt Wenzels Rainbow Club Card Pin !<br>
+											<br>
+										</font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="1">Bitte erst w&auml;hlen dann Abstimmen dr&uuml;cken !!!<br>
+										</font></div>
+									<BLOCKQUOTE>
+										<B></B></BLOCKQUOTE>
+								</TD>
+							</TR>
+							<TR VALIGN="MIDDLE" height="12">
+								<TD BGCOLOR="#EEEEEE" WIDTH=30 height="12">
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136536" CHECKED></CENTER>
+								</TD>
+								<TD BGCOLOR="#EEEEEE" width="298" height="12"><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">1. Hildegard</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#DDDDDD" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136537"></CENTER>
+								</TD>
+								<TD BGCOLOR="#DDDDDD" width="298"><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">2. Barbara</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#EEEEEE" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136538"></CENTER>
+								</TD>
+								<TD BGCOLOR="#EEEEEE" width="298"><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">3. Irmtraut</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#DDDDDD" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136539"></CENTER>
+								</TD>
+								<TD BGCOLOR="#DDDDDD" width="298"><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">4. Granate</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#EEEEEE" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136540"></CENTER>
+								</TD>
+								<TD BGCOLOR="#EEEEEE" width="298"><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">5. Heidi</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#DDDDDD" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136541"></CENTER>
+								</TD>
+								<TD BGCOLOR="#DDDDDD" width="298"><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">6. Gudrun</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#EEEEEE" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136542"></CENTER>
+								</TD>
+								<TD BGCOLOR="#EEEEEE" width="298"><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">7. Ilse</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#DDDDDD" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136543"></CENTER>
+								</TD>
+								<TD BGCOLOR="#DDDDDD" width="298"><font color="#000000" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2">8. Irmgart</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#EEEEEE" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136544"></CENTER>
+								</TD>
+								<TD BGCOLOR="#EEEEEE" width="298"><font color="#000000" size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">9. Funz</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#DDDDDD" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136545"></CENTER>
+								</TD>
+								<TD BGCOLOR="#DDDDDD" width="298"><font color="#000000" size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">10. Ingeborg</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE" height="18">
+								<TD BGCOLOR="#EEEEEE" WIDTH=30 height="18">
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136546"></CENTER>
+								</TD>
+								<TD BGCOLOR="#EEEEEE" width="298" height="18"><font color="#000000" size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">11. Rakete</font></TD>
+							</TR>
+							<TR VALIGN="MIDDLE">
+								<TD BGCOLOR="#DDDDDD" WIDTH=30>
+									<CENTER>
+										<INPUT TYPE="Radio" NAME="PID" VALUE="136547"></CENTER>
+								</TD>
+								<TD BGCOLOR="#DDDDDD" width="298"><font color="#000000" size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">12. Lilo</font></TD>
+							</TR>
+							<TR VALIGN=BOTTOM height="30">
+								<TD WIDTH=30 HEIGHT=30 BGCOLOR="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+								<TD WIDTH=298 BGCOLOR="#000000" height="30"><INPUT STYLE="font-size:11px;font-family:Arial,Geneva" TYPE=SUBMIT VALUE="Abstimmen">&nbsp;&nbsp;&nbsp;&nbsp;<INPUT STYLE="font-size:11px;font-family:Arial,Geneva" NAME="RESULT" TYPE=SUBMIT VALUE="Ergebnis"></TD>
+							</TR>
+						</TABLE>
+					</FORM>
+				</td>
+				<td width="170" height="8" colspan="11"></td>
+				<td width="1" height="8"><spacer type="block" width="1" height="8"></td>
+			</tr>
+			<tr height="8">
+				<td width="72" height="175" colspan="5" rowspan="2"></td>
+				<td width="98" height="175" colspan="6" rowspan="2" valign="top" align="left" xpos="592"><a href="#" onclick="CSAction(new Array(/*CMP*/'D836B595'));return CSClickReturn();" csclick="D836B595"><img src="bilder/tanga_voting/Tanga6-small.jpg" width="90" height="170" border="0"></a></td>
+				<td width="1" height="8"><spacer type="block" width="1" height="8"></td>
+			</tr>
+			<tr height="167">
+				<td width="16" height="167"></td>
+				<td width="74" height="167" colspan="6" valign="top" align="left" xpos="16"><a href="#" onclick="CSAction(new Array(/*CMP*/'DCF28B103'));return CSClickReturn();" csclick="DCF28B103"><img src="bilder/tanga_voting/Tanga12-small.jpg" width="73" height="165" border="0"></a></td>
+				<td width="86" height="167" colspan="5"></td>
+				<td width="1" height="167"><spacer type="block" width="1" height="167"></td>
+			</tr>
+			<tr height="3">
+				<td width="176" height="3" colspan="12"></td>
+				<td width="102" height="65" colspan="9" rowspan="2"></td>
+				<td width="32" height="65" rowspan="2" align="left" xpos="622" content valign="top" csheight="32">
+					<div align="center">
+						<font color="#14cc28" size="4"><b>4.</b></font></div>
+				</td>
+				<td width="36" height="65" rowspan="2"></td>
+				<td width="1" height="3"><spacer type="block" width="1" height="3"></td>
+			</tr>
+			<tr height="62">
+				<td width="36" height="62" colspan="3"></td>
+				<td width="32" height="62" colspan="2" align="left" xpos="36" content valign="top" csheight="32">
+					<div align="center">
+						<font color="#14cc28" size="4"><b>12.</b></font></div>
+				</td>
+				<td width="108" height="62" colspan="7"></td>
+				<td width="1" height="62"><spacer type="block" width="1" height="62"></td>
+			</tr>
+			<tr height="165">
+				<td width="16" height="165"></td>
+				<td width="70" height="165" colspan="5" valign="top" align="left" xpos="16"><a href="#" onclick="CSAction(new Array(/*CMP*/'DD5B6B104'));return CSClickReturn();" csclick="DD5B6B104"><img src="bilder/tanga_voting/Tanga11-small.jpg" width="69" height="160" border="0"></a></td>
+				<td width="90" height="165" colspan="6"></td>
+				<td width="72" height="165" colspan="5"></td>
+				<td width="98" height="165" colspan="6" valign="top" align="left" xpos="592"><a href="#" onclick="CSAction(new Array(/*CMP*/'D966D397'));return CSClickReturn();" csclick="D966D397"><img src="bilder/tanga_voting/Tanga4-small.jpg" width="82" height="165" border="0"></a></td>
+				<td width="1" height="165"><spacer type="block" width="1" height="165"></td>
+			</tr>
+			<tr height="5">
+				<td width="36" height="77" colspan="3" rowspan="2"></td>
+				<td width="32" height="77" colspan="2" rowspan="2" align="left" xpos="36" content valign="top" csheight="32">
+					<div align="center">
+						<font color="#14cc28" size="4"><b>11.</b></font></div>
+				</td>
+				<td width="108" height="77" colspan="7" rowspan="2"></td>
+				<td width="170" height="5" colspan="11"></td>
+				<td width="1" height="5"><spacer type="block" width="1" height="5"></td>
+			</tr>
+			<tr height="72">
+				<td width="102" height="72" colspan="9"></td>
+				<td width="32" height="72" align="left" xpos="622" content valign="top" csheight="32">
+					<div align="center">
+						<b><font color="#14cc28" size="4">5.</font></b></div>
+				</td>
+				<td width="36" height="242" rowspan="2"></td>
+				<td width="1" height="72"><spacer type="block" width="1" height="72"></td>
+			</tr>
+			<tr height="170">
+				<td width="56" height="170" colspan="4"></td>
+				<td width="112" height="170" colspan="7" valign="top" align="left" xpos="56"><a href="#" onclick="CSAction(new Array(/*CMP*/'D6753092'));return CSClickReturn();" csclick="D6753092"><img src="bilder/tanga_voting/Tanga8-small.jpg" width="95" height="165" border="0"></a></td>
+				<td width="16" height="170" colspan="2"></td>
+				<td width="80" height="170" colspan="4" valign="top" align="left" xpos="184"><a href="#" onclick="CSAction(new Array(/*CMP*/'DA186098'));return CSClickReturn();" csclick="DA186098"><img src="bilder/tanga_voting/Tanga3-small.jpg" width="79" height="165" border="0"></a></td>
+				<td width="40" height="170"></td>
+				<td width="88" height="170" colspan="5" valign="top" align="left" xpos="304"><a href="#" onclick="CSAction(new Array(/*CMP*/'D562F091'));return CSClickReturn();" csclick="D562F091"><img src="bilder/tanga_voting/Tanga9-small.jpg" width="83" height="170" border="0"></a></td>
+				<td width="32" height="170"></td>
+				<td width="96" height="170" colspan="4" valign="top" align="left" xpos="424"><a href="#" onclick="CSAction(new Array(/*CMP*/'D8BD4396'));return CSClickReturn();" csclick="D8BD4396"><img src="bilder/tanga_voting/Tanga5-small.jpg" width="87" height="170" border="0"></a></td>
+				<td width="24" height="170" colspan="2"></td>
+				<td width="110" height="170" colspan="8" valign="top" align="left" xpos="544"><a href="#" onclick="CSAction(new Array(/*CMP*/'DE0869105'));return CSClickReturn();" csclick="DE0869105"><img src="bilder/tanga_voting/Tanga10-small.jpg" width="91" height="165" border="0"></a></td>
+				<td width="1" height="170"><spacer type="block" width="1" height="170"></td>
+			</tr>
+			<tr height="5">
+				<td width="86" height="37" colspan="6" rowspan="2"></td>
+				<td width="32" height="37" colspan="2" rowspan="2" align="left" xpos="86" content valign="top" csheight="32">
+					<div align="center">
+						<b><font size="4" color="#14cc28">10.</font></b></div>
+				</td>
+				<td width="451" height="5" colspan="23"></td>
+				<td width="32" height="37" colspan="4" rowspan="2" align="left" xpos="569" content valign="top" csheight="32">
+					<div align="center">
+						<b><font size="4" color="#14cc28">6.</font></b></div>
+				</td>
+				<td width="89" height="37" colspan="4" rowspan="2"></td>
+				<td width="1" height="5"><spacer type="block" width="1" height="5"></td>
+			</tr>
+			<tr height="32">
+				<td width="86" height="32" colspan="6"></td>
+				<td width="32" height="32" colspan="2" align="left" xpos="204" content valign="top" csheight="32">
+					<div align="center">
+						<font color="#14cc28" size="4"><b>9.</b></font></div>
+				</td>
+				<td width="93" height="32" colspan="3"></td>
+				<td width="32" height="32" colspan="2" align="left" xpos="329" content valign="top" csheight="32">
+					<div align="center">
+						<font color="#14cc28" size="4"><b>8.</b></font></div>
+				</td>
+				<td width="88" height="32" colspan="4"></td>
+				<td width="32" height="32" align="left" xpos="449" content valign="top" csheight="32">
+					<div align="center">
+						<b><font color="#14cc28" size="4">7.</font></b></div>
+				</td>
+				<td width="88" height="32" colspan="5"></td>
+				<td width="1" height="32"><spacer type="block" width="1" height="32"></td>
+			</tr>
+			<tr height="1" cntrlrow>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="4" height="1"><spacer type="block" width="4" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="12" height="1"><spacer type="block" width="12" height="1"></td>
+				<td width="18" height="1"><spacer type="block" width="18" height="1"></td>
+				<td width="4" height="1"><spacer type="block" width="4" height="1"></td>
+				<td width="28" height="1"><spacer type="block" width="28" height="1"></td>
+				<td width="2" height="1"><spacer type="block" width="2" height="1"></td>
+				<td width="2" height="1"><spacer type="block" width="2" height="1"></td>
+				<td width="46" height="1"><spacer type="block" width="46" height="1"></td>
+				<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+				<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+				<td width="20" height="1"><spacer type="block" width="20" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="28" height="1"><spacer type="block" width="28" height="1"></td>
+				<td width="40" height="1"><spacer type="block" width="40" height="1"></td>
+				<td width="25" height="1"><spacer type="block" width="25" height="1"></td>
+				<td width="31" height="1"><spacer type="block" width="31" height="1"></td>
+				<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+				<td width="15" height="1"><spacer type="block" width="15" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="32" height="1"><spacer type="block" width="32" height="1"></td>
+				<td width="25" height="1"><spacer type="block" width="25" height="1"></td>
+				<td width="32" height="1"><spacer type="block" width="32" height="1"></td>
+				<td width="24" height="1"><spacer type="block" width="24" height="1"></td>
+				<td width="15" height="1"><spacer type="block" width="15" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+				<td width="25" height="1"><spacer type="block" width="25" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="7" height="1"><spacer type="block" width="7" height="1"></td>
+				<td width="8" height="1"><spacer type="block" width="8" height="1"></td>
+				<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="5" height="1"><spacer type="block" width="5" height="1"></td>
+				<td width="32" height="1"><spacer type="block" width="32" height="1"></td>
+				<td width="36" height="1"><spacer type="block" width="36" height="1"></td>
+				<td width="1" height="1"></td>
+			</tr>
+		</table>
+		<p></p>
+	</body>
+
+</html>

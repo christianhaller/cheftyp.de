@@ -1,0 +1,248 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>www.Cheftyp.de</title>
+		<csscriptdict>
+
+<script LANGUAGE="JavaScript1.1">
+
+function right(e) {
+if (navigator.appName == 'Netscape' && 
+(e.which == 3 || e.which == 2))
+return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && 
+(event.button == 2 || event.button == 3)) {
+alert("neee...das könnte die wohl so passen !");
+
+return false;
+}
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+
+}
+
+function winopen(){ //v2.0
+window.open("http://www.fergies-dj-team.de", "newWindow", "toolbar=yes,location=yes,directories=no,status=yes, menubar=yes,scrollbars=yes,resizable=yes,copyhistory=yes") 
+} 
+
+
+
+</script>
+
+
+			<script><!--
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'home',/*URL*/'home1.gif',/*URL*/'home2.gif',/*URL*/'','Home...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'partybilder',/*URL*/'bilder1.gif',/*URL*/'bilder2.gif',/*URL*/'','Partybilder...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'hotlinks',/*URL*/'hotlinks1.gif',/*URL*/'hotlinks2.gif',/*URL*/'','Hotlinks...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Gifs',/*URL*/'gifs1.gif',/*URL*/'gifs2.gif',/*URL*/'','animierte Gif\'s...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'fussball',/*URL*/'fussball1.gif',/*URL*/'fussball2.gif',/*URL*/'','Fußballseite...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'motorrad',/*URL*/'motorrad1.gif',/*URL*/'motorrad2.gif',/*URL*/'','Supersportler...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'lotto',/*URL*/'lotto1.gif',/*URL*/'lotto2.gif',/*URL*/'','Lotto King Karl...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'home2',/*URL*/'sonstiges1.gif',/*URL*/'sonstiges2.gif',/*URL*/'','sonstiges...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'ich',/*URL*/'ich1.gif',/*URL*/'ich2.gif',/*URL*/'','über mich...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'fanshop',/*URL*/'fanshop1.gif',/*URL*/'fanshop2.gif',/*URL*/'','Fanshop...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'kontakt',/*URL*/'kontakt1.gif',/*URL*/'kontakt2.gif',/*URL*/'','Kontakt...');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'gaestebuch',/*URL*/'gaestebuch1.gif',/*URL*/'gaestebuch2.gif',/*URL*/'','Gästebuch...');
+
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body bgcolor="black" onload="CSScriptInit();">
+		<table cool width="121" height="427" usegridx usegridy showgridx showgridy gridx="6" gridy="6" border="0" cellpadding="0" cellspacing="0">
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="home2.gif" st="Home..."><a href="../main.html" target="main" onmouseover="return CSIShow(/*CMP*/'home',1)" onmouseout="return CSIShow(/*CMP*/'home',0)" onclick="return CSButtonReturn()"><img src="home1.gif" width="120" height="30" name="home" border="0" alt="Home..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="bilder2.gif" st="Partybilder..."><a href="../../partybilder/partybilder_frame.html" target="main" onmouseover="return CSIShow(/*CMP*/'partybilder',1)" onmouseout="return CSIShow(/*CMP*/'partybilder',0)" onclick="return CSButtonReturn()"><img src="bilder1.gif" width="120" height="30" name="partybilder" border="0" alt="Partybilder..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="hotlinks2.gif" st="Hotlinks..."><a href="../../hotlinks/hotlinks_frame.html" target="main" onmouseover="return CSIShow(/*CMP*/'hotlinks',1)" onmouseout="return CSIShow(/*CMP*/'hotlinks',0)" onclick="return CSButtonReturn()"><img src="hotlinks1.gif" width="120" height="30" name="hotlinks" border="0" alt="Hotlinks..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="gifs2.gif" st="animierte Gif's..."><a href="../../gifs/gifs_1.html" target="main" onmouseover="return CSIShow(/*CMP*/'Gifs',1)" onmouseout="return CSIShow(/*CMP*/'Gifs',0)" onclick="return CSButtonReturn()"><img src="gifs1.gif" width="120" height="30" name="Gifs" border="0" alt="animierte Gif's..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="fussball2.gif" st="Fußballseite..."><a href="../../fussball/fussball.html" target="main" onmouseover="return CSIShow(/*CMP*/'fussball',1)" onmouseout="return CSIShow(/*CMP*/'fussball',0)" onclick="return CSButtonReturn()"><img src="fussball1.gif" width="120" height="30" name="fussball" border="0" alt="Fu&szlig;ballseite..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="motorrad2.gif" st="Supersportler..."><a href="../motorrad/motorrad.html" target="main" onmouseover="return CSIShow(/*CMP*/'motorrad',1)" onmouseout="return CSIShow(/*CMP*/'motorrad',0)" onclick="return CSButtonReturn()"><img src="motorrad1.gif" width="120" height="30" name="motorrad" border="0" alt="Supersportler..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="lotto2.gif" st="Lotto King Karl..."><a href="../../lottokk/lottokk.html" target="main" onmouseover="return CSIShow(/*CMP*/'lotto',1)" onmouseout="return CSIShow(/*CMP*/'lotto',0)" onclick="return CSButtonReturn()"><img src="lotto1.gif" width="120" height="30" name="lotto" border="0" alt="Lotto King Karl..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="sonstiges2.gif" st="sonstiges..."><a href="../../sonstiges/sonstiges_frame.html" target="main" onmouseover="return CSIShow(/*CMP*/'home2',1)" onmouseout="return CSIShow(/*CMP*/'home2',0)" onclick="return CSButtonReturn()"><img src="sonstiges1.gif" width="120" height="30" name="home2" border="0" alt="sonstiges..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="ich2.gif" st="über mich..."><a href="../../ich/ich.html" target="main" onmouseover="return CSIShow(/*CMP*/'ich',1)" onmouseout="return CSIShow(/*CMP*/'ich',0)" onclick="return CSButtonReturn()"><img src="ich1.gif" width="120" height="30" name="ich" border="0" alt="&uuml;ber mich..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="fanshop2.gif" st="Fanshop..."><a href="../../fanshop/fanshop.html" target="main" onmouseover="return CSIShow(/*CMP*/'fanshop',1)" onmouseout="return CSIShow(/*CMP*/'fanshop',0)" onclick="return CSButtonReturn()"><img src="fanshop1.gif" width="120" height="30" name="fanshop" border="0" alt="Fanshop..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+			<tr height="36">
+				<td width="120" height="36" valign="top" align="left" xpos="0"><csobj w="120" h="30" t="Button" ht="kontakt2.gif" st="Kontakt..."><a href="../../kontakt/kontakt_frame.html" target="main" onmouseover="return CSIShow(/*CMP*/'kontakt',1)" onmouseout="return CSIShow(/*CMP*/'kontakt',0)" onclick="return CSButtonReturn()"><img src="kontakt1.gif" width="120" height="30" name="kontakt" border="0" alt="Kontakt..."></a></csobj></td>
+				<td width="1" height="36"><spacer type="block" width="1" height="36"></td>
+			</tr>
+
+			<tr height="1" cntrlrow>
+				<td width="120" height="1"><spacer type="block" width="120" height="1"></td>
+				<td width="1" height="1"></td>
+			</tr>
+		</table>
+		<p></p>
+<body onUnload="winopen()">
+	</body>
+
+</html>
